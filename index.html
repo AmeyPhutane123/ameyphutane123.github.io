@@ -5,154 +5,232 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amey Phutane | Data Science & Business Analytics</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #eef2f7, #f9fafb);
+      color: #1f2933;
     }
 
     .container {
-      max-width: 900px;
-      margin: 40px auto;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
       background: #ffffff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 14px;
+      padding: 50px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 5px;
+    /* HEADER */
+    .header {
+      margin-bottom: 50px;
     }
 
-    h2 {
-      font-size: 20px;
-      margin-top: 40px;
-      border-bottom: 2px solid #e9ecef;
-      padding-bottom: 6px;
+    .header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 8px;
     }
 
-    h3 {
-      margin-bottom: 5px;
-    }
-
-    .subtitle {
-      color: #495057;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      margin-top: 25px;
-    }
-
-    ul {
-      padding-left: 18px;
-    }
-
-    li {
+    .header .role {
+      font-size: 18px;
+      font-weight: 500;
+      color: #3b82f6;
       margin-bottom: 6px;
     }
 
-    .skills span {
-      display: inline-block;
-      background: #eef2f7;
-      padding: 6px 10px;
-      margin: 5px 6px 5px 0;
-      border-radius: 5px;
-      font-size: 14px;
+    .header .current {
+      font-size: 15px;
+      color: #6b7280;
     }
 
-    .project {
+    /* SECTION */
+    .section {
+      margin-top: 45px;
+    }
+
+    .section h2 {
+      font-size: 22px;
+      font-weight: 600;
       margin-bottom: 20px;
+      position: relative;
     }
 
+    .section h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #3b82f6;
+      margin-top: 8px;
+      border-radius: 3px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #374151;
+      margin-bottom: 16px;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 10px 16px;
+      background: #f1f5f9;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #1f2933;
+      transition: all 0.2s ease;
+    }
+
+    .skill:hover {
+      background: #3b82f6;
+      color: #ffffff;
+    }
+
+    /* PROJECTS */
+    .project {
+      padding: 22px;
+      border-radius: 12px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 20px;
+      transition: all 0.25s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .project p {
+      font-size: 15px;
+      color: #4b5563;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
     .footer {
+      text-align: center;
       margin-top: 40px;
       font-size: 14px;
-      color: #6c757d;
-      text-align: center;
+      color: #9ca3af;
     }
 
-    a {
-      color: #0b5ed7;
-      text-decoration: none;
-    }
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .card {
+        padding: 30px;
+      }
 
-    a:hover {
-      text-decoration: underline;
+      .header h1 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
+    <div class="card">
 
-    <h1>Amey Phutane</h1>
-    <div class="subtitle">
-      Data Scientist | Business Analytics<br/>
-      Associate – Business Intelligence Analyst at MSCI
-    </div>
-
-    <div class="section">
-      <h2>About</h2>
-      <p>
-        I am a Data Science and Business Analytics professional currently working as an
-        Associate Business Intelligence Analyst at MSCI. My work focuses on analyzing
-        structured data, building dashboards, and supporting business and operational
-        decision-making.
-      </p>
-      <p>
-        Alongside my role, I work on data science projects involving customer behavior analysis,
-        segmentation, churn prediction, and forecasting. I enjoy solving practical data problems
-        and translating analysis into insights that stakeholders can actually use.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span>Data Analysis</span>
-        <span>Business Intelligence</span>
-        <span>SQL</span>
-        <span>Microsoft Power BI</span>
-        <span>Customer Analytics</span>
-        <span>Forecasting</span>
-        <span>Predictive Analytics</span>
+      <!-- HEADER -->
+      <div class="header">
+        <h1>Amey Phutane</h1>
+        <div class="role">Data Scientist | Business Analytics</div>
+        <div class="current">Associate – Business Intelligence Analyst at MSCI</div>
       </div>
-    </div>
 
-    <div class="section">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Churn Prediction</h3>
+      <!-- ABOUT -->
+      <div class="section">
+        <h2>About</h2>
         <p>
-          Built a churn prediction use case to identify factors influencing customer attrition.
-          Performed exploratory analysis on customer behavior and usage patterns, and developed
-          a predictive model to estimate churn probability and support retention-focused insights.
+          I am a Data Science and Business Analytics professional currently working as an
+          Associate Business Intelligence Analyst at MSCI. My work focuses on analyzing
+          structured data, building dashboards, and supporting business and operational
+          decision-making.
+        </p>
+        <p>
+          Alongside my role, I work on data science projects involving customer behavior
+          analysis, segmentation, churn prediction, and forecasting. I enjoy solving
+          practical data problems and translating analysis into insights that stakeholders
+          can actually use.
         </p>
       </div>
 
-      <div class="project">
-        <h3>Customer Segmentation</h3>
-        <p>
-          Developed a customer segmentation approach using behavioral and transactional data.
-          Identified meaningful segments highlighting differences in engagement, usage patterns,
-          and value, and communicated insights through clear analysis and visual summaries.
-        </p>
+      <!-- SKILLS -->
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">Data Analysis</div>
+          <div class="skill">Business Intelligence</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Microsoft Power BI</div>
+          <div class="skill">Customer Analytics</div>
+          <div class="skill">Forecasting</div>
+          <div class="skill">Predictive Analytics</div>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="section">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <h3>Churn Prediction</h3>
+          <p>
+            Built a churn prediction use case to identify factors influencing customer
+            attrition. Performed exploratory analysis on customer behavior and usage
+            patterns, and developed a predictive model to estimate churn probability and
+            support retention-focused insights.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Customer Segmentation</h3>
+          <p>
+            Developed a customer segmentation approach using behavioral and transactional
+            data. Identified meaningful segments highlighting differences in engagement,
+            usage patterns, and value, and communicated insights through clear analysis and
+            visual summaries.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        © 2026 Amey Phutane
       </div>
 
     </div>
-
-    <div class="footer">
-      © 2026 Amey Phutane
-    </div>
-
   </div>
+
 </body>
 </html>
